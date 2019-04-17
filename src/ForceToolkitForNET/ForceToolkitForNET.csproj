@@ -55,9 +55,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CommonLibrariesForNET\CommonLibrariesForNET.csproj" />
+    <PackageReference Include="Salesforce.Common" Version="1.0.0.7" />
   </ItemGroup>
   <Target Name="IncludeSalesforceCommon">
     <ItemGroup>
