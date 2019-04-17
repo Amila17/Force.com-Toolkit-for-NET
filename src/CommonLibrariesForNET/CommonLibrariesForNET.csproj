@@ -1,6 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;net452;net462;net472</TargetFrameworks>
     <RootNamespace>Salesforce.Common</RootNamespace>
     <AssemblyName>Salesforce.Common</AssemblyName>
     <SignAssembly>true</SignAssembly>
@@ -8,11 +7,13 @@
     <AssemblyTitle>Salesforce.Common</AssemblyTitle>
     <Company>salesforce.com</Company>
     <Product>Salesforce.Common</Product>
-    <Description></Description>
+    <Description>
+    </Description>
     <Copyright>Copyright © 2018</Copyright>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <PropertyGroup Condition="'$(TargetFramework)'=='net452'">
     <FrameworkPathOverride>$(NuGetPackageRoot)microsoft.targetingpack.netframework.v4.5.2\1.0.1\lib\net452\</FrameworkPathOverride>
