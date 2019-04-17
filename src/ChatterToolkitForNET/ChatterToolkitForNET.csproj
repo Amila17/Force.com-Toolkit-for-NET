@@ -1,6 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;net452;net462;net472</TargetFrameworks>
     <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);IncludeSalesforceCommon</TargetsForTfmSpecificBuildOutput>
     <RootNamespace>Salesforce.Chatter</RootNamespace>
     <AssemblyName>Salesforce.Chatter</AssemblyName>
@@ -9,11 +8,13 @@
     <AssemblyTitle>Salesforce.Chatter</AssemblyTitle>
     <Company>salesforce.com</Company>
     <Product>Salesforce.Chatter</Product>
-    <Description></Description>
+    <Description>
+    </Description>
     <Copyright>Copyright © 2018</Copyright>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
+    <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
   <PropertyGroup Condition="'$(TargetFramework)'=='net452'">
     <FrameworkPathOverride>$(NuGetPackageRoot)microsoft.targetingpack.netframework.v4.5.2\1.0.1\lib\net452\</FrameworkPathOverride>
@@ -56,7 +57,7 @@
     <ProjectReference Include="..\CommonLibrariesForNET\CommonLibrariesForNET.csproj" PrivateAssets="All" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" /> 
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
   </ItemGroup>
   <Target Name="IncludeSalesforceCommon">
     <ItemGroup>
